@@ -25,7 +25,7 @@ class PlantTests {
     }
 
     private fun givenPlantServiceIsInitialized() {
-       plantService = PlantService()
+       plantService = PlantService(allPlants)
     }
 
     private suspend fun whenPlantDataAreReadAndParsed() {
