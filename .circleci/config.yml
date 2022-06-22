@@ -20,7 +20,7 @@ jobs:
           paths:
             - ~/.gradle
           key: jars-{{ checksum "build.gradle" }}-{{ checksum "app/build.gradle" }}
-     # - run:
+     - run:
               - run: ./gradlew build
               - run: ./gradlew jacocoTestReport
       #    name: Run Tests
